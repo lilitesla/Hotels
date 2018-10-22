@@ -8,10 +8,9 @@ import tesla.lili.hotels.data.model.Hotel
 
 
 interface RestApi {
-
-    @GET("Jokaerro/Hotello/master/api/{source}")
+    @GET("lilitesla/Hotels/master/api/{source}")
     fun getHotels(@Path("source") hotelsSource: String): Observable<List<Hotel>>
 
-    @GET("Jokaerro/Hotello/master/api/{source}.json")
+    @GET("lilitesla/Hotels/master/api/{source}.json")
     fun getHotel(@Path("source") hotelSource: String): Observable<HotelDetail>
 }

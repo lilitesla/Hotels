@@ -18,7 +18,7 @@ data class HotelDetail (val id: String,
                         ) {
 
     fun getImageUrl(): String {
-        return "https://github.com/Jokaerro/Hotello/raw/master/api/" + image
+        return "https://github.com/lilitesla/Hotels/raw/master/api/" + image
     }
 
     fun getFreeRoomsCount(): Int {
